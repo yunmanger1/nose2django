@@ -24,7 +24,7 @@ class DjangoConfig(Plugin):
 
         setup_test_environment()
 
-        event.suite = reorder_suite(event.suite, (unittest.TestCase,))
+        # event.suite = reorder_suite(event.suite, (unittest.TestCase,))
 
         self.old_config = self.dtsr.setup_databases()
         
