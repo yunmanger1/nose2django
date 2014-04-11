@@ -17,7 +17,8 @@ class DjangoConfig(Plugin):
         Init the django environ and re-order the tests according to
         the django documented test runner behaviour.
         """
-        from django.test.simple import reorder_suite, DjangoTestSuiteRunner
+        from django.test.simple import DjangoTestSuiteRunner
+        # reorder_suite, 
         from django.test.utils import setup_test_environment
         # Init the django default runner so we can call it's functions as needed
         self.dtsr = DjangoTestSuiteRunner()
